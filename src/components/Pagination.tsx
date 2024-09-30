@@ -3,10 +3,11 @@ import React from "react";
 interface PaginationProps {
   currentPage: number;
   onPageChange: (newPage: number) => void;
+  isNextDisabled: boolean;
 }
 
 const Pagination: React.FC<PaginationProps> = React.memo(
-  ({ currentPage, onPageChange }) => {
+  ({ currentPage, onPageChange, isNextDisabled }) => {
     return (
       <div className="pagination">
         <button
@@ -18,7 +19,10 @@ const Pagination: React.FC<PaginationProps> = React.memo(
         {/* <button> */}
         <span className="pagination-current">{currentPage + 1}</span>
         {/* </button> */}
-        <button onClick={() => onPageChange(currentPage + 1)}>
+        <button
+          onClick={() => onPageChange(currentPage + 1)}
+          disabled={isNextDisabled}
+        >
           <span>&#8594; {/* Right Arrow */}</span>
         </button>
       </div>

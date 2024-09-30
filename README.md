@@ -1,21 +1,20 @@
 # Giphy Search App
 
-A single-page application built using React that allows users to search for GIFs using the Giphy API. The app features live search results, pagination, and a responsive layout.
+A single-page application built using React (CRA) that allows users to search for GIFs using the Giphy API. The app features live search results with pagination, and a responsive layout for gifs.
 
 ## Features
 
 - Search GIFs from Giphy using the Giphy Search API.
 - Live search results as you type.
 - Pagination with arrow-based controls.
-- Collage/masonry-style responsive layout for GIFs.
+- Collage responsive layout for GIFs.
 - Hover effects on GIFs for enhanced user experience.
-- Environment variables for securing the API key.
 
 ## Demo
 
 Watch a demonstration of the app here:
 
-[Click here to view the demo video](./video/demo.mp4)
+[![Click here to view the demo video](https://raw.githubusercontent.com/shailjasarawagi/giphy-search/main/public/logo192.png)](https://raw.githubusercontent.com/shailjasarawagi/giphy-search/main/video/demo.mp4)
 
 ## Getting Started
 
