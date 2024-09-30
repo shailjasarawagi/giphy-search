@@ -14,7 +14,7 @@ A single-page application built using React (CRA) that allows users to search fo
 
 Watch a demonstration of the app here:
 
-[![Click here to view the demo video](https://raw.githubusercontent.com/shailjasarawagi/giphy-search/main/public/logo192.png)](https://raw.githubusercontent.com/shailjasarawagi/giphy-search/main/video/demo.mp4)
+https://raw.githubusercontent.com/shailjasarawagi/giphy-search/main/video/demo.mp4
 
 ## Getting Started
 
