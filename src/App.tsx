@@ -16,7 +16,7 @@ const App: React.FC = () => {
   const [totalCount, setTotalCount] = useState(0);
   const queryParams = new URLSearchParams(location.search);
   const searchTerm = queryParams.get("q") || "";
-  const page = parseInt(queryParams.get("page") || "1", 10) - 1;
+  const page = parseInt(queryParams.get("page") || "1", 10);
 
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
   const isNextDisabled = (page + 1) * 10 >= totalCount;

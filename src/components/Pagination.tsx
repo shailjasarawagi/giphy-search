@@ -11,13 +11,13 @@ const Pagination: React.FC<PaginationProps> = React.memo(
     return (
       <div className="pagination">
         <button
-          disabled={currentPage === 0}
+          disabled={currentPage === 1}
           onClick={() => onPageChange(currentPage - 1)}
         >
           <span>&#8592; {/* Left Arrow */}</span>
         </button>
         {/* <button> */}
-        <span className="pagination-current">{currentPage + 1}</span>
+        <span className="pagination-current">{currentPage}</span>
         {/* </button> */}
         <button
           onClick={() => onPageChange(currentPage + 1)}
