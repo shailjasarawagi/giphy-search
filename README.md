@@ -21,6 +21,13 @@ Watch a demonstration of the app here:
 
 These instructions will help you set up the project locally on your machine.
 
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- npm (comes with Node.js)
+
 1. **Clone the repository**:
 
    ```bash
