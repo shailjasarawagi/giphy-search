@@ -9,11 +9,11 @@ const GifList: React.FC<GifListProps> = React.memo(({ gifs, loading }) => {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div className="gif-list">
+    <div className="gif-display">
       {gifs.map((gif) => (
-        <div key={gif.id} className="gif-item">
-          <img src={gif.images.original.url} alt={gif.title} />
-        </div>
+        // <div key={gif.id} className="gif-item">
+        <img src={gif.images.original.url} alt={gif.title} />
+        // </div>
       ))}
     </div>
   );

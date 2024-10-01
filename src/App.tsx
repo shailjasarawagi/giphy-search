@@ -20,9 +20,6 @@ const App: React.FC = () => {
 
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
   const isNextDisabled = (page + 1) * 10 >= totalCount;
-  useEffect(() => {
-    fetchGifs(searchTerm, page, setLoading, setGifs, setTotalCount);
-  }, [searchTerm, page]);
 
   useEffect(() => {
     if (debouncedSearchTerm) {
@@ -30,7 +27,7 @@ const App: React.FC = () => {
     } else {
       setGifs([]);
     }
-  }, [debouncedSearchTerm, page, fetchGifs]);
+  }, [debouncedSearchTerm, page]);
 
   const handleSearch = useCallback(
     (term: string) => {

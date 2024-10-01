@@ -34,27 +34,21 @@ body {
   border-color: #0073e6;
 }
 
-.gif-list {
+.gif-display {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-.gif-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.gif-item img {
+.gif-display img {
   width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
+  height: 150px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
-.gif-item img:hover {
+.gif-display img:hover {
   transform: scale(1.05);
 }
 
